@@ -49,6 +49,7 @@
 		A834C0462387CA340057F3C5 /* LearnSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LearnSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A834C04A2387CA340057F3C5 /* LearnSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftUITests.swift; sourceTree = "<group>"; };
 		A834C04C2387CA340057F3C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A834C0592387CFAB0057F3C5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +107,7 @@
 				A834C0312387CA330057F3C5 /* Assets.xcassets */,
 				A834C0332387CA330057F3C5 /* LaunchScreen.storyboard */,
 				A834C0362387CA330057F3C5 /* Info.plist */,
+				A834C0592387CFAB0057F3C5 /* README.md */,
 			);
 			path = LearnSwift;
 			sourceTree = "<group>";
