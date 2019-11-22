@@ -49,9 +49,9 @@ var str = "Hello, playground"
 //print(errorCode)
 //print(errorMessage)
 
-func writeFile(content: String) -> (errorCode: Int, errorMessage: String) {
-    return (1, "没有权限")
-}
-
-let error = writeFile(content: "")
-print(error)
+//func writeFile(content: String) -> (errorCode: Int, errorMessage: String) {
+//    return (1, "没有权限")
+//}
+//
+//let error = writeFile(content: "")
+//print(error)
