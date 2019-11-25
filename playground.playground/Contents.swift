@@ -55,3 +55,23 @@ var str = "Hello, playground"
 //
 //let error = writeFile(content: "")
 //print(error)
+
+
+
+//let num1: UInt8 = 250
+//let num2 = num1 + 10
+//print(num2)
+
+
+//let num1: UInt8 = 250
+//let num2 = num1 &+ 10
+//print(num2)
+
+
+//let num1: UInt8 = 0
+//let num2 = num1 &- 1
+//print(num2)
+
+//let num1: Int8 = -128
+//let num2 = num1 &- 1
+//print(num2)
