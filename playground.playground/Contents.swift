@@ -75,3 +75,27 @@ var str = "Hello, playground"
 //let num1: Int8 = -128
 //let num2 = num1 &- 1
 //print(num2)
+
+//let range = 0...10
+//for i in range {
+//    print(i)
+//}
+
+//let names = ["zhangsan ", "lisi", "wangwu"]
+//for name in names[...2] {
+//    print(name)
+//}
+
+
+//var welcome = "Hello,world"
+//
+//let range = "a"..."z"
+//for c in welcome {
+//    if !range.contains(String(c)) {
+//        print("not small \(c)")
+//    }
+//}
+
+for i in (0...10).reversed() {
+    print(i)
+}
