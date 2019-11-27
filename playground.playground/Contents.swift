@@ -146,3 +146,42 @@ extension Vector: Equatable {
 }
 
 print(vector == vector2)
+
+infix operator +-: AdditionPrecedence
+extension Vector {
+    static func +- (left: Vector, right: Vector) -> Vector {
+        return Vector(x: left.x + right.x, y: left.y - right.y)
+    }
+}
+
+infix operator *^: MultiplicationPrecedence
+precedencegroup MyPrecedence {
+    associativity: left
+    lowerThan: AdditionPrecedence
+}
+
+extension Vector {
+    static func *^ (left: Vector, right: Vector) -> Vector {
+        return Vector(x: left.x * right.x, y: left.y * left.y + right.y * right.y)
+    }
+}
+
+let firstVector = Vector(x: 1.0, y: 2.0)
+let secondVector = Vector(x: 2.0, y: 3.0)
+let thirdVector = Vector(x: 3.0, y: 4.0)
+
+let plueMinusVactor = firstVector +- secondVector
+print(plueMinusVactor)
+let timesVactor = firstVector +- secondVector  *^ thirdVector
+print(timesVactor)
+
+prefix operator +++
+
+extension Vector {
+    static prefix func +++ (vector: Vector) -> Vector {
+        return Vector(x: vector.x * 2, y: vector.y * 2)
+    }
+}
+
+let plusVector = +++Vector(x: 1.0, y: 1.0)
+print(plusVector)
