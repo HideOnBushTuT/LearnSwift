@@ -96,53 +96,6 @@ var str = "Hello, playground"
 //    }
 //}
 
-//for i in (0...10).reversed() {
-//    print(i)
-//}
-
-
-//extension
-
-struct Vector {
-    var x = 0.0, y = 0.0
+for i in (0...10).reversed() {
+    print(i)
 }
-
-extension Vector {
-    static func + (x: Vector, y: Vector) -> Vector {
-        return Vector(x: x.x + y.x, y: x.y + y.y)
-    }
-}
-
-var vector = Vector(x: 3.0, y: 2.0)
-let anotherVector = Vector(x: 1.0, y: 1.0)
-
-let newVector = vector + anotherVector
-print(newVector)
-
-extension Vector {
-    static prefix func - (vector: Vector) -> Vector {
-        return Vector(x: -vector.x, y: -vector.y)
-    }
-}
-
-let vector2 = -newVector
-print(vector2)
-
-
-extension Vector {
-    static func += (left: inout Vector, right: Vector) {
-        left = Vector(x: left.x + right.x, y: right.y + left.y)
-    }
-}
-
-vector += vector2
-print(vector)
-
-
-extension Vector: Equatable {
-    public static func == (left: Vector, right: Vector) -> Bool {
-        return (left.x == right.x) && (left.y == right.y)
-    }
-}
-
-print(vector == vector2)
