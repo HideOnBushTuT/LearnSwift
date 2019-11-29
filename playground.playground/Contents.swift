@@ -103,85 +103,111 @@ var str = "Hello, playground"
 
 //extension
 
-struct Vector {
-    var x = 0.0, y = 0.0
-}
+//struct Vector {
+//    var x = 0.0, y = 0.0
+//}
+//
+//extension Vector {
+//    static func + (x: Vector, y: Vector) -> Vector {
+//        return Vector(x: x.x + y.x, y: x.y + y.y)
+//    }
+//}
+//
+//var vector = Vector(x: 3.0, y: 2.0)
+//let anotherVector = Vector(x: 1.0, y: 1.0)
+//
+//let newVector = vector + anotherVector
+//print(newVector)
+//
+//extension Vector {
+//    static prefix func - (vector: Vector) -> Vector {
+//        return Vector(x: -vector.x, y: -vector.y)
+//    }
+//}
+//
+//let vector2 = -newVector
+//print(vector2)
+//
+//
+//extension Vector {
+//    static func += (left: inout Vector, right: Vector) {
+//        left = Vector(x: left.x + right.x, y: right.y + left.y)
+//    }
+//}
+//
+//vector += vector2
+//print(vector)
+//
+//
+//extension Vector: Equatable {
+//    public static func == (left: Vector, right: Vector) -> Bool {
+//        return (left.x == right.x) && (left.y == right.y)
+//    }
+//}
+//
+//print(vector == vector2)
+//
+//infix operator +-: AdditionPrecedence
+//extension Vector {
+//    static func +- (left: Vector, right: Vector) -> Vector {
+//        return Vector(x: left.x + right.x, y: left.y - right.y)
+//    }
+//}
+//
+//infix operator *^: MultiplicationPrecedence
+//precedencegroup MyPrecedence {
+//    associativity: left
+//    lowerThan: AdditionPrecedence
+//}
+//
+//extension Vector {
+//    static func *^ (left: Vector, right: Vector) -> Vector {
+//        return Vector(x: left.x * right.x, y: left.y * left.y + right.y * right.y)
+//    }
+//}
+//
+//let firstVector = Vector(x: 1.0, y: 2.0)
+//let secondVector = Vector(x: 2.0, y: 3.0)
+//let thirdVector = Vector(x: 3.0, y: 4.0)
+//
+//let plueMinusVactor = firstVector +- secondVector
+//print(plueMinusVactor)
+//let timesVactor = firstVector +- secondVector  *^ thirdVector
+//print(timesVactor)
+//
+//prefix operator +++
+//
+//extension Vector {
+//    static prefix func +++ (vector: Vector) -> Vector {
+//        return Vector(x: vector.x * 2, y: vector.y * 2)
+//    }
+//}
+//
+//let plusVector = +++Vector(x: 1.0, y: 1.0)
+//print(plusVector)
 
-extension Vector {
-    static func + (x: Vector, y: Vector) -> Vector {
-        return Vector(x: x.x + y.x, y: x.y + y.y)
-    }
-}
 
-var vector = Vector(x: 3.0, y: 2.0)
-let anotherVector = Vector(x: 1.0, y: 1.0)
+//for c in "hello world" {
+//    print(c)
+//}
 
-let newVector = vector + anotherVector
-print(newVector)
+//let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
+//for t in numberOfLegs {
+//    print("\(t.key) \(t.value)")
+//}
 
-extension Vector {
-    static prefix func - (vector: Vector) -> Vector {
-        return Vector(x: -vector.x, y: -vector.y)
-    }
-}
+//for t in numberOfLegs {
+//    print("\(t.1) \(t.0) \(t)")
+//}
 
-let vector2 = -newVector
-print(vector2)
+//for (name, legs) in numberOfLegs {
+//    print("\(name), \(legs)")
+//}
 
-
-extension Vector {
-    static func += (left: inout Vector, right: Vector) {
-        left = Vector(x: left.x + right.x, y: right.y + left.y)
-    }
-}
-
-vector += vector2
-print(vector)
-
-
-extension Vector: Equatable {
-    public static func == (left: Vector, right: Vector) -> Bool {
-        return (left.x == right.x) && (left.y == right.y)
-    }
-}
-
-print(vector == vector2)
-
-infix operator +-: AdditionPrecedence
-extension Vector {
-    static func +- (left: Vector, right: Vector) -> Vector {
-        return Vector(x: left.x + right.x, y: left.y - right.y)
-    }
-}
-
-infix operator *^: MultiplicationPrecedence
-precedencegroup MyPrecedence {
-    associativity: left
-    lowerThan: AdditionPrecedence
-}
-
-extension Vector {
-    static func *^ (left: Vector, right: Vector) -> Vector {
-        return Vector(x: left.x * right.x, y: left.y * left.y + right.y * right.y)
-    }
-}
-
-let firstVector = Vector(x: 1.0, y: 2.0)
-let secondVector = Vector(x: 2.0, y: 3.0)
-let thirdVector = Vector(x: 3.0, y: 4.0)
-
-let plueMinusVactor = firstVector +- secondVector
-print(plueMinusVactor)
-let timesVactor = firstVector +- secondVector  *^ thirdVector
-print(timesVactor)
-
-prefix operator +++
-
-extension Vector {
-    static prefix func +++ (vector: Vector) -> Vector {
-        return Vector(x: vector.x * 2, y: vector.y * 2)
-    }
-}
-
-let plusVector = +++Vector(x: 1.0, y: 1.0)
-print(plusVector)
+//for i in stride(from: 0, to: 50, by: 5) {
+//    print(i)
+//}
+//
+//for i in stride(from: 0, through: 50, by: 5) {
+//    print(i)
+//}
