@@ -186,6 +186,7 @@ var str = "Hello, playground"
 //let plusVector = +++Vector(x: 1.0, y: 1.0)
 //print(plusVector)
 
+//===================== for
 
 //for c in "hello world" {
 //    print(c)
@@ -210,4 +211,29 @@ var str = "Hello, playground"
 //
 //for i in stride(from: 0, through: 50, by: 5) {
 //    print(i)
+//}
+
+ 
+//= ==================== switch
+//let c: Character = "z"
+//
+//switch c {
+//case "a":
+//    print("this is the first of letter")
+//case "z":
+//    print("z")
+//
+//default:
+//    print("default")
+//}
+//
+//let c2 = "a"
+//
+//switch c2 {
+//case "a", "e", "i", "o", "u":
+//    print("main letter")
+//case "b", "c", "d":
+//    print("other letter")
+//default:
+//    print("default")
 //}
